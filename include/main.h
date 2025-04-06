@@ -1,4 +1,4 @@
-/**
+/*
  * \file main.h
  *
  * Contains common definitions and header files used throughout your PROS
@@ -71,7 +71,9 @@ void opcontrol(void);
 #endif
 
 #ifdef __cplusplus
-#include "autonomous.h"
+
+#include "subSystems.h"
+#include "autonomousActions.h"
 /**
  * You can add C++-only headers here
  */
