@@ -1,4 +1,3 @@
-#pragma once
 /*
  * \file main.h
  *
@@ -33,6 +32,7 @@
  *
  * For instance, you can do `4_mtr = 50` to set motor 4's target velocity to 50
  */
+ 
 #define PROS_USE_LITERALS
 
 #include "api.h"
@@ -41,6 +41,7 @@
  * You should add more #includes here
  */
 //#include "okapi/api.hpp"
+#include "robodash/api.h"
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do
@@ -73,14 +74,19 @@ void opcontrol(void);
 
 #ifdef __cplusplus
 //My C++ only header files
+
+//subsyetems
 #include "subsystemsHeaders/arm.hpp"
 #include "subsystemsHeaders/doinker.hpp"
 #include "subsystemsHeaders/intake.hpp"
 #include "subsystemsHeaders/globals.hpp"
 #include "subsystemsHeaders/drivesettings.hpp"
+//autons
+#include "autonHeaders/testAuton.hpp"
 
 //#include <iostream>
 //End of C++ only header files
 #endif
 
 #endif  // _PROS_MAIN_H_
+
