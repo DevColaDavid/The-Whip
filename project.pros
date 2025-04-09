@@ -299,7 +299,7 @@
     },
     "upload_options": {
       "slot": 3,
-      "icon": "X",
+      "icon": "pros",
       "description": "robot code for 42700W for JROTC nationals"
     },
     "use_early_access": false

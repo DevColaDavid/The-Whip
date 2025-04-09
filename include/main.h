@@ -1,3 +1,4 @@
+#pragma once
 /*
  * \file main.h
  *
@@ -71,14 +72,15 @@ void opcontrol(void);
 #endif
 
 #ifdef __cplusplus
+//My C++ only header files
+#include "subsystemsHeaders/arm.hpp"
+#include "subsystemsHeaders/doinker.hpp"
+#include "subsystemsHeaders/intake.hpp"
+#include "subsystemsHeaders/globals.hpp"
+#include "subsystemsHeaders/drivesettings.hpp"
 
-#include "subSystems.h"
-#include "autonomousActions.h"
-
-/**
- * You can add C++-only headers here
- */
 //#include <iostream>
+//End of C++ only header files
 #endif
 
 #endif  // _PROS_MAIN_H_
