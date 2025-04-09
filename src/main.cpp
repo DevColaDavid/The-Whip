@@ -18,6 +18,13 @@ void initialize() {
             pros::delay(50);
         }
     });
+    
+    pros::Task liftControlTask([]{
+        while (true) {
+            liftControl();
+            pros::delay(10);
+        }
+    });
 }
 
 void disabled() {

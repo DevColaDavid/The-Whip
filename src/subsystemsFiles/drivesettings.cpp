@@ -11,9 +11,6 @@ lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
                               2 // horizontal drift is 2
 );
 
-// imu
-pros::Imu imu(19);
-
 // odometry settings
 lemlib::OdomSensors sensors(nullptr, //&vertical_tracking_wheel, // vertical tracking wheel 1, set to null
                             nullptr, // vertical tracking wheel 2, set to nullptr as we are using IMEs
